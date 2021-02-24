@@ -1,359 +1,560 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="en">
 
 <head>
-  <title>Seacrest</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link rel="icon" type="image/gif" href="images/icon.png" />
-  <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700" rel="stylesheet">
 
-  <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Cricaré Petróleo</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/magnific-popup.css">
-  <link rel="stylesheet" href="css/jquery-ui.css">
-  <link rel="stylesheet" href="css/owl.carousel.min.css">
-  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
 
-  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+    <!-- script
+    ================================================== -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">
+    </script>
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
 
-  <link rel="stylesheet" href="css/aos.css">
-
-  <link rel="stylesheet" href="css/style.css">
-
+    <!-- favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
 
 </head>
 
-<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 
-  <div class="site-wrap" id="home-section">
+<body id="top">
 
-    <div id="overlayer"></div>
-    <div class="loader">
-      <div class="spinner-border text-primary" role="status">
-        <span class="sr-only">Loading...</span>
-      </div>
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader" class="dots-jump">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
     </div>
 
-    <div class="site-mobile-menu site-navbar-target">
-      <div class="site-mobile-menu-header">
-        <div class="site-mobile-menu-close mt-3">
-          <span class="icon-close2 js-menu-toggle"></span>
-        </div>
-      </div>
-      <div class="site-mobile-menu-body"></div>
-    </div> <!-- .site-mobile-menu -->
 
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
 
-    <div class="site-navbar-wrap">
-      <div class="site-navbar site-navbar-target js-sticky-header">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-2">
-              <a href="index.html" class="text-black">
-                <img src="images/logo.png" height="25" style="padding-bottom: 5px;">
-              </a>
+        <div class="row">
+
+            <div class="header-logo">
+                <a class="site-logo" href="index.html"><img src="images/logo.svg" alt="Homepage"></a>
             </div>
-            <div class="col-10">
-              <nav class="site-navigation text-right" role="navigation">
-                <div class="container">
-                  <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3">
-                    <a href="#" class="site-menu-toggle js-menu-toggle text-white">
-                      <span class="icon-menu h3"></span>
+
+            <nav class="header-nav-wrap">
+                <ul class="header-nav">
+                    <li class="current"><a class="smoothscroll" href="#home" title="Home">Home</a></li>
+                    <li><a class="smoothscroll" href="#about" title="About">About</a></li>
+                    <li><a class="smoothscroll" href="#vision" title="Vision">Our Vision</a></li>
+                    <li><a class="smoothscroll" href="#esg" title="ESG">ESG Policies</a></li>
+                    <li><a class="smoothscroll" href="#contact" title="Contact">Contact</a></li>
+                </ul>
+            </nav> <!-- end header-nav-wrap -->
+
+            <a class="header-menu-toggle" href="#0">
+                <span class="header-menu-icon"></span>
+            </a>
+
+        </div> <!-- end row -->
+
+    </header> <!-- end s-header -->
+
+
+    <!-- home
+    ================================================== -->
+    <section id="home" class="s-home page-hero target-section" data-parallax="scroll" data-image-src="images/hero_1.jpg"
+        data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+
+        <div class="shadow-overlay"></div>
+
+        <div class="home-content">
+
+            <div class="row home-content__main">
+
+                <h1>
+                    Privately owned upstream <br>
+                    oil and gas company
+                </h1>
+                <span class="display-1--light">Focusing on acquiring and operating de-risked producing oil and gas
+                    fields <br> in Brazil currently being divested by Petrobras
+                </span>
+
+                <div class="home-content__button">
+                    <a href="#about" class="smoothscroll btn btn-animatedbg">
+                        More About Us
                     </a>
-                  </div>
-
-                  <ul class="site-menu main-menu js-clone-nav d-none d-lg-block">
-                    <li>
-                      <a href="#home-section" class="nav-link">Home</a>
-                    </li>
-                    <li>
-                      <a href="#overview-section" class="nav-link">Overview</a>
-                    <li>
-                      <a href="#assets-section" class="nav-link">Assets</a>
-                    </li>
-                    <li>
-                      <a href="#compliance-section" class="nav-link">Compliance</a>
-                    </li>
-                    <li>
-                      <a href="#partnerships-section" class="nav-link">Partnership</a>
-                    </li>
-                    <li>
-                      <a href="#contact-section" class="nav-link">Contact</a>
-                    </li>
-                  </ul>
                 </div>
-              </nav>
+
+                <div class="home-content__video">
+                    <a class="video-link" href="https://www.youtube.com/watch?v=lsnxMTPBdkE" data-lity>
+                        <span class="video-icon"></span>
+                        <span class="video-text">Play Video</span>
+                    </a>
+                </div>
+
+            </div> <!-- end home-content__main -->
+
+        </div> <!-- end home-content -->
+
+    </section> <!-- end s-home -->
+
+    <!-- stats
+    ================================================== -->
+    <section class="s-stats">
+
+        <div class="row section-header" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead">Highlights of Assets</h3>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="owl-carousel slide-one-item">
-
-
-
-
-      <div class="site-section-cover overlay img-bg-section" style="background-image: url('images/hero_1.jpg'); ">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-md-12 col-lg-7">
-              <h2 class="font-gray-1">Global private equity firm dedicated to E&P investments with more than 10 years’
-                experience in E&P investment in Europe, Africa and Latin America.</h2>
-              <p><a href="#overview-section" class="btn btn-outline-primary border-w-2 btn-md">Know more</a></p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="site-section-cover overlay img-bg-section" style="background-image: url('images/hero_2.jpg'); ">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-md-12 col-lg-7">
-              <h2 class="font-gray-1">Careful management of environmental, social and governance issues are at the heart
-                of Seacrest and all our portfolio companies.</h2>
-              <p><a href="#team-section" class="btn btn-outline-primary border-w-2 btn-md">Check our Compliance
-                  Policies</a></p>
-            </div>
-          </div>
         </div>
 
-      </div>
+        <div class="row stats-block block-1-4 block-m-1-2 block-mob-full" data-aos="fade-up">
 
-
-    </div>
-
-
-    <div class="site-section block__73694" id="overview-section" style="padding-bottom: 0; padding-top: 5rem;">
-      <div class="container-fluid">
-        <div class="text-center mb-3">
-          <div class="block-heading-1">
-            <h2 style="padding-bottom: 7rem;">Overview</h2>
-          </div>
-        </div>
-        <div class="row ml-auto mr-auto" style="display: flex; justify-content: center; width: 90%; height: 100%;">
-          <div class="col-md-6 col-lg-4 mb-0 mb-lg-4" data-aos="fade-up">
-            <div class="unit-4 d-block" style="height: 80%;">
-              <div class="unit-4-icon mb-3">
-                <span class="icon-wrap"><span class="text-primary"><i class="fas fa-brain"></i></span></span>
-              </div>
-              <div>
-                <h3>Technical Expertise and Local Knowledge</h3>
-                <p class="font-gray-10">The company has a highly experienced E&P team with a strong track record at the
-                  most relevant Brazilian onshore and offshore basins as well as ones outside Brazil.</p>
-              </div>
+            <div class="col-block item-stats ">
+                <div class="item-stats__count">27</div>
+                <h5>Onshore Fields</h5>
+            </div>
+            <div class="col-block item-stats">
+                <div class="item-stats__count">800</div>
+                <h5>Drilled Wells</h5>
+            </div>
+            <div class="col-block item-stats">
+                <div class="item-stats__count">600</div>
+                <h5>Million BBL VOIP</h5>
+            </div>
+            <div class="col-block item-stats">
+                <div class="item-stats__count">22</div>
+                <h5>Pipeline (km)</h5>
             </div>
 
-          </div>
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="unit-4 d-block" style="height: 80%;">
-              <div class="unit-4-icon mb-3">
-                <span class="icon-wrap"><span class="text-primary"><i class="fas fa-seedling"></i></span></span>
-              </div>
-              <div>
-                <h3>Corporate Responsability</h3>
-                <p class="font-gray-10">Seacrest believes that the prevention of accidents and ill-health, the
-                  protection of the environment and the prevention of pollution are essential to the efficient operation
-                  of its portfolio companies.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="unit-4 d-block" style="height: 80%;">
-              <div class="unit-4-icon mb-3">
-                <span class="icon-wrap"><span class="text-primary"><i class="fas fa-handshake"></i></span></span>
-              </div>
-              <div>
-                <h3>The Right Partner</h3>
-                <p class="font-gray-10">The company is currently building a diversified portfolio of onshore and shallow
-                  water producing assets where value can be added by improving operations, developing reserves and
-                  extending economic life.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+        </div> <!-- end stats -->
 
-    <div class="site-section bg-primary" id="assets-section" style="padding: 3rem 0;">
-      <div class="container">
-        <div class="text-center mb-3">
-          <div class="block-heading-1">
-            <h2 style="padding-bottom: 3rem; color: #FFF;">Highlights of Assets</h2>
-          </div>
+    </section> <!-- end s-stats -->
+
+    <!-- about
+    ================================================== -->
+    <section id="about" class="s-about target-section">
+
+        <div class="row section-header" data-aos="fade-up">
+            <div class="col-full">
+                <h3 data-num="01" class="subhead">About Us</h3>
+                <p class="lead" style="font-size: 1.6rem; text-align: center; font-weight: bold; padding: 0;">
+                    Our first acquisition of 27 onshore fields has formed a platform that already ranks as one of
+                    the
+                    most relevant in Brazil onshore.
+                </p>
+            </div>
         </div>
-        <div class="row">
-          <div class="col-12">
+
+        <div class="row about-process block-1-2 block-tab-full">
+
+            <div class="site-section block__73694">
+                <div style="display: flex; justify-content: center;">
+                    <div class="row container-about">
+                        <div class="about-box" data-aos="fade-up">
+                            <div class="unit-4 d-block" style="height: 80%;">
+                                <div class="unit-4-icon mb-3">
+                                    <span class="icon-wrap"><span><i class="fas fa-seedling"></i></span></span>
+                                </div>
+                                <div>
+                                    <h3 style="margin-left: 0;">How It All Started</h3>
+                                    <p class="lead" style="font-size: 1.5rem;">The company was established in 2020
+                                        when Seacrest Capital acquired the first 27 licenses in partnership with
+                                        Karavan Oil & Gas from Petrobras. The Brazil platform was then formed and
+                                        holds
+                                        a 100% working interest in the 27 fields, also known as the Cricaré cluster.
+                                        Thus, Cricaré Petróleo.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="about-box" data-aos="fade-up">
+                            <div class="unit-4 d-block" style="height: 80%;">
+                                <div class="unit-4-icon mb-3">
+                                    <span class="icon-wrap"><span><i class="fas fa-brain"></i></span></span>
+                                </div>
+                                <div>
+                                    <h3 style="margin-left: 0;">Technical Expertise and Capital Discipline</h3>
+                                    <p class="lead" style="font-size: 1.5rem;">We have a strong core team
+                                        of experienced professionals with a skill mix expected from a long-standing
+                                        Brazil operator Petrobras and the capital discipline typical of private
+                                        equity
+                                        investments from seasoned senior team and the board of directors.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about-box" data-aos="fade-up">
+                            <div class="unit-4 d-block" style="height: 80%;">
+                                <div class="unit-4-icon mb-3">
+                                    <span class="icon-wrap"><span><i class="fas fa-check"></i></span></span>
+                                </div>
+                                <div>
+                                    <h3 style="margin-left: 0;">Ready for More</h3>
+                                    <p class="lead" style="font-size: 1.5rem;">Cricaré Petróleo has already met the
+                                        Brazilian regulator ANP’s technical qualifications to operate onshore and
+                                        shallow water licenses in Brazil. This Seacrest platform will be the vehicle
+                                        for
+                                        expansion in producing assets in Brazil and Latam.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div> <!-- end about-process -->
+
+    </section> <!-- end s-about -->
+
+
+    <!-- vision
+    ================================================== -->
+    <section id="vision" class="s-vision target-section">
+
+        <div class="row section-header" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead">Our Vision</h3>
+            </div>
+        </div>
+
+        <div class="row vision-list block-1-2 block-m-1-2 block-tab-full">
+            <div class="col-block item-vision" data-aos="fade-up" style="text-align: center;">
+                <img src="images/undraw_Finance_re_gnv2.svg" class="vision-img" />
+            </div>
+
+            <div class="col-block item-vision" data-aos="fade-up">
+                <h4>Focus on Investors</h4>
+                <p>
+                    At Cricaré Petróleo, we have a clear objective of delivering maximum value to our investors from
+                    those assets though a combination of commitment to high productivity, best ESG practices in the
+                    industry and disciplined investing.
+                </p>
+            </div>
+        </div>
+
+        <div class="row vision-list block-1-2 block-m-1-2 block-tab-full reverse">
+            <div class="col-block item-vision" data-aos="fade-up">
+                <h4>Constant Search for Opportunities</h4>
+                <p>
+                    In addition to re-developing the mature assets being acquired under Petrobras’ divestment process,
+                    we will continue to look for opportunities to expand the portfolio with investments in
+                    mid-life assets, onshore and offshore Brazil.
+                </p>
+            </div>
+
+            <div class="col-block item-vision" data-aos="fade-up" style="text-align: center;">
+                <img src="images/undraw_Web_search_re_efla.svg" class="vision-img" />
+            </div>
+        </div>
+
+        <div class="row vision-list block-1-2 block-m-1-2 block-tab-full">
+            <div class="col-block item-vision" data-aos="fade-up" style="text-align: center;">
+                <img src="images/undraw_team_goals_hrii.svg" class="vision-img" />
+            </div>
+
+            <div class="col-block item-vision" data-aos="fade-up">
+                <h4>Build Strategic Relationships</h4>
+                <p>
+                    As an operator, Cricaré Petróleo intends to maintain strategic long-term relationships with partners
+                    that contribute technology and creative solutions, whether operational or financial, to drive down
+                    costs to the lowest among her peers.
+                </p>
+            </div>
+        </div>
+
+    </section> <!-- end s-vision -->
+
+
+    <!-- esg
+    ================================================== -->
+    <section id="esg" class="s-esg target-section">
+
+        <div class="row section-header" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead">ESG Policies</h3>
+                <p style="font-size: 1.6rem; text-align: center; font-weight: bold; padding: 0; color: #4C4C4C;">
+                    At Cricaré Petróleo, ESG is at the core of our strategy as a tool to reduce risk and, consequently,
+                    increase value. The pillars are our Culture, our Corporate Governance model and, especially,
+                    our Ethic and Transparency.
+                </p>
+            </div>
+        </div>
+
+        <div class="row esg-list block-1-2 block-m-1-2 block-tab-full goals" style="align-items: flex-start;">
+            <div id="goals-list" class="col-block item-esg" data-aos="fade-up">
+                <h2 style="margin-top: 1rem;">Our Goals</h2>
+                <div class="goals-item esg-list" style="display: flex; align-items: center;">
+                    <div class="goals__item_icon">
+                        <i class="fas fa-hard-hat"></i>
+                    </div>
+                    <div class="goals__item_text">
+                        <h5 style="margin: 0;">No Accidents</h5>
+                    </div>
+                </div>
+                <div class="goals-item esg-list" style="display: flex; align-items: center;">
+                    <div class="goals__item_icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <div class="goals__item_text">
+                        <h5 style="margin: 0;">No Harm to People</h5>
+                    </div>
+                </div>
+                <div class="goals-item esg-list" style="display: flex; align-items: center;">
+                    <div class="goals__item_icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <div class="goals__item_text">
+                        <h5 style="margin: 0;">No Damage to the Environment</h5>
+                    </div>
+                </div>
+                <div class="goals-item esg-list" style="display: flex; align-items: center;">
+                    <div class="goals__item_icon">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <div class="goals__item_text">
+                        <h5 style="margin: 0;">No Wrongdoings</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-block item-esg" data-aos="fade-up">
+                <h2>Our Commitments</h2>
+                <ul class="collapsible" data-collapsible="accordion">
+                    <li>
+                        <div class="collapsible-header">
+                            <i class="fas fa-globe-americas" style="margin-right: 3.25rem;"></i>
+                            <h5 style="margin: 0;">Our Environmental Commitments</h5>
+                        </div>
+                        <div class="collapsible-body">
+                            <p>Annual reduction of at least 10% in our carbon footprint and 10% improvements in water
+                                management and energy per boe of production.</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="collapsible-header">
+                            <i class="fas fa-users" style="margin-right: 3.25rem;"></i>
+                            <h5 style="margin: 0;">Our Social Commitments</h5>
+                        </div>
+                        <div class="collapsible-body">
+                            <p>Our practices include fomenting basic education and health programs at community level,
+                                as well as training and opportunity for our collaborators to ascend professionally and
+                                as human beings.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="collapsible-header">
+                            <i class="fas fa-landmark" style="margin-right: 3.25rem;"></i>
+                            <h5 style="margin: 0;">Our Governance Commitments</h5>
+                        </div>
+                        <div class="collapsible-body">
+                            <p>Highest standards of anti-corruption practices, transparency in financial reporting to
+                                all shareholders, functional ESG, fiscal/tax/finance and remuneration committees.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+
+        <div class="docs-wrap" data-aos="fade-up">
+
             <div class="row">
-              <div class="col-md-6 col-lg-0 col-lg-3">
-                <div class="block-counter-1 mb-3 mt-3">
-                  <span class="number"><span data-number="27">0</span></span>
-                  <span class="caption">Onshore Fields</span>
+                <div class="col-full docs-header">
+                    <h2 class="h1" style="color: #151515;">Discover Our Guidelines</h2>
                 </div>
-              </div>
-              <div class="col-md-6 col-lg-0 col-lg-3">
-                <div class="block-counter-1  mb-3 mt-3">
-                  <span class="number"><span data-number="800">0</span></span>
-                  <span class="caption">Drilled Wells</span>
+            </div>
+
+            <div class="row docs">
+
+                <div class="col-full docs__slider">
+
+                    <div class="docs__slide">
+                        <div style="width: 100%; display: flex; justify-content: center;">
+                            <a href="#" target="_blank" style="display: flex; justify-content: center;"><i
+                                    class="far fa-file-pdf"></i></a>
+                        </div>
+                        <h3 style="margin-top: 4rem;">Code of Ethics and
+                            Conduct
+                        </h3>
+                    </div> <!-- end docs__slide -->
+
+                    <div class="docs__slide">
+                        <div style="width: 100%; display: flex; justify-content: center;">
+                            <a href="#" target="_blank" style="display: flex; justify-content: center;"><i
+                                    class="far fa-file-pdf"></i></a>
+                        </div>
+                        <h3 style="margin-top: 4rem;">Anti-Corruption Manual
+                        </h3>
+                    </div> <!-- end docs__slide -->
+
+                </div> <!-- end docs__slider -->
+
+            </div> <!-- end docs -->
+
+            <div class="row">
+                <div class="col-full docs-header">
+                    <h2 class="h1" style="color: #151515;">Reporting Channel</h2>
                 </div>
-              </div>
-              <div class="col-md-6 col-lg-0 col-lg-3">
-                <div class="block-counter-1  mb-3 mt-3">
-                  <span class="number"><span data-number="600">0</span></span>
-                  <span class="caption">Million BBL VOIP</span>
+            </div>
+
+            <div id="reporting-list" class="row esg-list block-1-3 block-m-1-3 block-tab-full">
+                <div class="col-block item-esg reporting-item" data-aos="fade-up"
+                    style="display: flex; align-items: center; justify-content: center;">
+                    <a href="tel:0800-6018659">
+                        <div class="reporting__item_icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="reporting__item_text">
+                            <h5 style="margin: 0">Call the Hotline</h5>
+                        </div>
+                    </a>
                 </div>
-              </div>
-              <div class="col-md-6 col-lg-0 col-lg-3">
-                <div class="block-counter-1  mb-3 mt-3">
-                  <span class="number"><span data-number="22">0</span></span>
-                  <span class="caption">Pipeline (km)</span>
+                <div class="col-block item-esg reporting-item" data-aos="fade-up"
+                    style="display: flex; align-items: center; justify-content: center;">
+                    <a href="https://contatoseguro.com.br">
+                        <div class="reporting__item_icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="reporting__item_text">
+                            <h5 style="margin: 0;">Visit the Website</h5>
+                        </div>
+                    </a>
                 </div>
-              </div>
+                <div class="col-block item-esg reporting-item" data-aos="fade-up"
+                    style="display: flex; align-items: center; justify-content: center;">
+                    <a href="https://apps.apple.com/br/app/contato-seguro/id945536717">
+                        <div class="reporting__item_icon">
+                            <i class="fab fa-app-store"></i>
+                        </div>
+                        <div class="reporting__item_text">
+                            <h5 style="margin: 0;">Download the App</h5>
+                        </div>
+                    </a>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <div class="site-section block-13" id="compliance-section" data-aos="fade">
-      <div class="container">
+        </div> <!-- end docs-wrap -->
 
-        <div class="text-center mb-5">
-          <div class="block-heading-1">
-            <h2>Compliance</h2>
-            <span>We are committed to best compliance practices, as well as to the preservation and protection of the
-              environment</span>
-          </div>
-        </div>
+    </section> <!-- end s-esg -->
 
-        <div class="slide-one-item home-slider owl-carousel">
-          <div>
-            <div class="block-testimony-1 text-center">
 
-              <blockquote class="mb-4">
-                <a href="documents/KARAVAN_Política-Anticorrupção_2017.pdf" target="_blank" class="text-secondary"><i
-                    class="far fa-file-pdf" style="font-size: 150px"></i></a>
-              </blockquote>
-              <h3 class="font-size-20 font-gray-10">Anti-Corruption Policy</h3>
+    <!-- contact
+    ================================================== -->
+    <section id="contact" class="s-contact target-section">
+
+        <div class="row section-header" data-aos="fade-up">
+            <div class="col-full" style="text-align: center;">
+                <h4 style="margin-bottom: 1rem;">Get In Touch</h4>
+                <h3 class="subhead">Contact Us</h3>
+                <span class="display-1--light">Need further information? Call us at <a href="tel:+552139831703">+55
+                        (21) 3983-1703</a> or send a message to <a
+                        href="mailto:ir@karavancap.com">ir@karavancap.com</a>.</span>
+                <div style="margin-top: 5rem;">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16342.784096810497!2d-43.188289368767514!3d-22.910899375234138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997f6687a0204f%3A0xeef2cdbecb90b83e!2sKaravan%20Oil!5e0!3m2!1sen!2sbr!4v1587662789575!5m2!1sen!2sbr"
+                        width="95%" height="450" frameborder="0" style="border:0;" allowfullscreen=""
+                        aria-hidden="false" tabindex="0" class="map"></iframe>
+                </div>
             </div>
-          </div>
-
-          <div>
-            <div class="block-testimony-1 text-center">
-              <blockquote class="mb-4">
-                <a href="documents/Código-de-Ética-e-Conduta.pdf" target="_blank" class="text-secondary"><i
-                    class="far fa-file-pdf" style="font-size: 150px"></i></a>
-              </blockquote>
-              <h3 class="font-size-20 font-gray-10">Code of Ethics and Conduct</h3>
-            </div>
-          </div>
-
-          <div>
-            <div class="block-testimony-1 text-center">
-              <blockquote class="mb-4">
-                <a href="documents/KARAVAN_Política-Prevenção-à-Lavagem-de-Dinheiro_2017.pdf" target="_blank"
-                  class="text-secondary"><i class="far fa-file-pdf" style="font-size: 150px"></i></a>
-              </blockquote>
-              <h3 class="font-size-20 font-gray-10">Money Laundering Prevention Policy</h3>
-            </div>
-          </div>
-
         </div>
 
-      </div>
-    </div>
+    </section> <!-- end s-contact -->
 
-    <div class="site-section bg-light" id="partnerships-section" style="padding: 3rem 0;">
-      <div class="container">
-        <div class="text-center mb-3">
-          <div class="block-heading-1">
-            <h2 style="padding-bottom: 3rem;">Partnership</h2>
-          </div>
-        </div>
+
+    <!-- footer
+    ================================================== -->
+    <footer>
         <div class="row">
-          <div class="col-12">
-            <div class="row" style="display: flex; justify-content: center; padding-bottom: 1rem;">
-              <div>
-                <a href="https://karavanoil.com/"><img src="images/logo-karavan.png" height="65"></a>
-              </div>
+            <div class="col-full cl-copyright">
+                <span>
+                    &copy;
+                    <script>document.write(new Date().getFullYear());</script> Cricaré Petróleo. All rights
+                    reserved.
+                </span>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
 
-    <div class="site-section" id="contact-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 text-center mb-5">
-            <div class="block-heading-1">
-              <span>Get In Touch</span>
-              <h2>Contact Us</h2>
-            </div>
-          </div>
+        <div class="cl-go-top">
+            <a class="smoothscroll" href="#top"></a>
         </div>
-        <div class="row" style="display: flex; flex-direction: column; text-align: center;">
-          <div class="col-lg-12 ml-auto mr-auto mb-5">
-            <h2 class="font-gray-10 font-size-18">Need further information? Call us at <a href="tel:+14412978008">+1
-                441-297-8008</a> or send a message to <a href="mailto:info@seacrest.com">info@seacrest.com</a>.</h2>
-          </div>
-          <div class="col-lg-12 mb-5">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3372.698902576372!2d-64.78627538483026!3d32.293072281120764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8a2d146dcd9dd899%3A0x9da403aa3c843452!2sSeacrest%20Capital!5e0!3m2!1sen!2sbr!4v1613001092340!5m2!1sen!2sbr"
-              width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-              tabindex="0" class="map"></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <footer class="site-footer" style="padding: 2rem 0;">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <p class="text-white" style="text-align: center; padding: 2rem 0; margin: 0;">
-              &copy;
-              <script>document.write(new Date().getFullYear());</script> Seacrest Capital. All rights reserved.
-            </p>
-            <p style="position: fixed; bottom: 200">
-              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-              Copyright &copy;
-              <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made
-              with
-              <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com"
-                target="_blank">Colorlib</a>
-              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            </p>
-          </div>
-        </div>
-      </div>
     </footer>
 
-  </div>
+
+    <!-- photoswipe background
+    ================================================== -->
+    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close"
+                        title="Close (Esc)"></button> <button class="pswp__button pswp__button--share"
+                        title="Share"></button> <button class="pswp__button pswp__button--fs"
+                        title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom"
+                        title="Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div><!-- end photoSwipe background -->
 
 
-  <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/jquery-ui.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/jquery.sticky.js"></script>
-  <script src="js/jquery.waypoints.min.js"></script>
-  <script src="js/jquery.animateNumber.min.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="https://kit.fontawesome.com/9cf9b5ff70.js" crossorigin="anonymous"></script>
-
-  <script src="js/main.js"></script>
+    <!-- Java Script
+    ================================================== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="https://kit.fontawesome.com/9cf9b5ff70.js" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
 
 </body>
-
-</html>
